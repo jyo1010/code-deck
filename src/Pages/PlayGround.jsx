@@ -43,7 +43,7 @@ function PlayGround() {
       headers: {
         'content-type': 'application/json',
         'Content-Type': 'application/json',
-        'X-RapidAPI-Key': '4432c7e39fmshb8c037e3fc4d86ep1c1706jsnc1bab0e33807',
+        'X-RapidAPI-Key': 'b4e5c5a05fmsh9adf6ec091523f8p165338jsncc58f31c26e1',
         'X-RapidAPI-Host': 'judge0-ce.p.rapidapi.com'
       },
       data: JSON.stringify({
@@ -60,6 +60,7 @@ function PlayGround() {
   const getOutput = async (token) => {
     // we will make api call here
     const options = {
+      
       method: 'GET',
       url: "https://judge0-ce.p.rapidapi.com/submissions/" + token,
       params: { base64_encoded: 'true', fields: '*' },
